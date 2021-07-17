@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="NewFile.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+</head>
+
+<body>
+    <img id="abc" src="images/Group 20399.svg">
+    <img id="hlogo" src="images/logo.svg" />
+    <p id="il">Invoice List</p>
+
+    <div class="List">
+        <div class="menu_bar">
+            <nav id="nav">
+                <button id="add"><img class="add_symbol" src="images/Path 18189.svg">
+                    <div id="add_text">Add</div>
+                </button>
+                <button id="edit"><img class="edit_symbol" src="images/Path 18191.svg">
+                    <div id="edit_text">Edit</div>
+                </button>
+                <button id="delete"><img class="delete_symbol" src="images/Path 18189-1.svg">
+                    <div id="delete_text">Delete</div>
+                </button>
+            </nav>
+
+            <!--                        Modal for ADD invoice                                              -->
+
+            <div id="myModal" class="modal">
+                <!-- ADD MODEL -->
+                <form class="add_form" method="post" action="">
+                    <div class="add_modal">
+                        <div class="add_modal_header">
+                            <h1 id="head">Add Invoice<span class="add_close">&times;</span></h1>
+                        </div>
+                        <div class="add_model_body">
+
+                            <!-- Left Allign -->
+                            <fieldset id="left">
+                                <label for="customer_name">Customer Name <span class="asterix">*</span> </label>
+                                <input type="text" id="customer_name" name="name" required><br><br>
+
+                                <label for="customer_no">Customer No. <span class="asterix">*</span></label>
+                                <input type="text" id="customer_no" name="invoice_no" required><br><br>
+
+                                <label for="invoice_no">Invoice No. <span class="asterix">*</span></label>
+                                <input type="text" id="invoice_no" name="fname" required><br><br>
+
+                                <label for="invoice_amt">Invoice Amount <span class="asterix">*</span></label>
+                                <input type="text" id="invoice_amt" name="lname" required><br><br>
+
+                            </fieldset>
+                            <!-- Right Allign -->
+                            <fieldset id="right">
+                                <label for="due_TERM">Due Term <span class="asterix">*</span></label>
+                                <input type="date" id="due_date" name="name" required><br><br>
+
+                                <label for="notes">Notes </label>
+                                <input type="text" id="notes" name="notes" required><br><br>
+
+                            </fieldset>
+
+
+                        </div>
+                        <div class="add_modal_footer">
+                            <button type="button" id="add_footer_cancel">Cancel</button>
+                            <button type="reset" id="add_footer_clear">Clear</button>
+                            <button type="submit" id="add_footer_add">Add</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+
+            <!--                        Modal for EDIT Invoice                            -->
+
+            <div id="myModal1" class="modal1">
+                <form action="" method="post">
+                    <!-- EDIT MODEL -->
+                    <div class="edit_modal">
+                        <div class="edit_modal_header">
+                            <h1 id="edit_invoice">Edit Invoice<span class="edit_close">&times;</span></h1>
+                        </div>
+
+                        <div class="edit_modal_body">
+                            <label for="edit_invoice_amt" id="edit_invoice_amt">Invoice Amount </label>
+                            <input type="text" id="edit_invoice_amt_text" required><br><br>
+                            <label for="edit_notes" id="edit_notes">Notes</label>
+                            <input type="text" id="edit_text1" required><br><br>
+                        </div>
+
+                        <div class="edit_modal_footer">
+                            <button type="button" id="edit_footer_cancel">Cancel</button>
+                            <button type="reset" id="edit_footer_reset">Reset</button>
+                            <button type="submit" id="edit_footer_add">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <!--                        Modal for Delete Invoice                           -->
+
+            <div id="myModal2" class="modal2">
+                <form action="" method="post">
+                    <!-- DELETE MODEL -->
+                    <div class="delete_modal">
+                        <div class="delete_modal_header">
+                            <h1 id="delete_modal_records">Delete record(s)?<span class="delete_close">&times;</span></h1>
+                        </div>
+
+                        <div class="delete_modal_body">
+                            <p class="warning"> You'll lose your record(s) after this action. We can't recover them once you delete. </p>
+                            <p class="warning"> Are you sure you want to <span id="red_warning">permanently delete</span> them?
+                            </p>
+
+                        </div>
+
+                        <div class="delete_modal_footer">
+                            <button type="button" id="delete_footer_cancel">Cancel</button>
+                            <button type="submit" id="delete_footer_delete">Delete</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+            <div id="search">
+                <input type="text" id="search_bar" placeholder="Search by Invoice Number">
+                <img src="images/search-24px (3).svg" id="input_img">
+            </div>
+        </div>
+
+        <button class="circle_left" onclick="prevfunction()">&lt;</button>
+        <button class="circle_right" onclick="nextfunction()">&gt;</button>
+
+
+        <div class="grid">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" onclick="toggle(this)">
+                        </th>
+                        <th>Customer Name</th>
+                        <th>Customer #</th>
+                        <th>Invoice #</th>
+                        <th>Invoice Amount</th>
+                        <th>Due Date</th>
+                        <th>predicted payment date</th>
+                        <th>predicted aging bucket</th>
+                        <th>Notes</th>
+
+                    </tr>
+                </thead>
+                <tbody id='neu'>
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+    <script src="newscript.js"></script>
+
+
+</body>
+
+</html>

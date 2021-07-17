@@ -1,0 +1,783 @@
+@charset "ISO-8859-1";
+body {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 930px;
+    background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+    background-color: #39495E;
+    opacity: 1;
+}
+
+#abc {
+    position: absolute;
+    top: 16px;
+    left: 30px;
+    width: 233px;
+    height: 52px;
+    text-align: left;
+    font: normal normal bold 39px/52px Futura PT;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+#hlogo {
+    position: absolute;
+    top: 22px;
+    left: 843px;
+    width: 235px;
+    height: 50px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#il {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 141px;
+    height: 31px;
+    text-align: left;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.List {
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    width: 1860px;
+    height: 739px;
+    background: #273D49CC;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.menu_bar {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    font-size: 24px;
+    position: absolute;
+    left: 1200px;
+    top: 25px;
+    width: 641px;
+    height: 48px;
+    border-radius: 4px;
+    background: #273D49CC;
+    color: #fff;
+}
+
+#add_text {
+    position: relative;
+    height: 16px;
+    left: 8px;
+    width: 66px;
+    color: #97A1A9;
+}
+
+#add {
+    background-color: #273D49CC;
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 80px;
+    height: 37px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.add_symbol {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    width: 13px;
+    height: 10px;
+    color: #FFFFFF;
+}
+
+#edit_text {
+    position: relative;
+    height: 16px;
+    left: 11px;
+    width: 66px;
+    color: #97A1A9;
+}
+
+#edit {
+    background-color: #273D49CC;
+    position: absolute;
+    top: 5px;
+    left: 104px;
+    width: 80px;
+    height: 37px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.edit_symbol {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    width: 14px;
+    height: 13px;
+    color: #97A1A9;
+}
+
+#delete_text {
+    position: relative;
+    left: 11px;
+    height: 16px;
+    width: 71px;
+    color: #97A1A9;
+}
+
+#delete {
+    background-color: #273D49CC;
+    position: absolute;
+    top: 5px;
+    left: 197px;
+    width: 90px;
+    height: 37px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.delete_symbol {
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    width: 13px;
+    height: 3px;
+    color: #97A1A9;
+}
+
+.search {
+    position: relative;
+    left: 10px;
+}
+
+#search_bar {
+    background-color: #283A46;
+    position: absolute;
+    top: 5px;
+    left: 306px;
+    width: 299px;
+    float: right;
+    padding: 8px;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+#input_img {
+    position: relative;
+    left: -28px;
+    top: 13px;
+    height: 20px;
+}
+
+.circle_left {
+    position: absolute;
+    top: 369px;
+    left: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 70%;
+    border: none;
+    opacity: 1;
+    z-index: 1;
+    background: #39495E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000069;
+    text-align: center;
+    color: #97A1A9;
+    font-size: 27px;
+}
+
+.circle_right {
+    position: absolute;
+    top: 369px;
+    left: 1785px;
+    height: 50px;
+    width: 50px;
+    border-radius: 70%;
+    border: none;
+    opacity: 1;
+    z-index: 1;
+    background: #39495E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000069;
+    text-align: center;
+    color: #97A1A9;
+    font-size: 27px;
+}
+
+.circle_left:hover {
+    color: #FFFFFF;
+    background-color: #14AFF1;
+}
+
+.circle_right:hover {
+    color: #FFFFFF;
+    background-color: #14AFF1;
+}
+
+table {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns: 40px 250px 180px 180px 220px 170px 235px 247px 258px;
+}
+
+thead,
+tbody,
+tr {
+    display: contents;
+}
+
+th,
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: #273D49CC;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: #808080;
+}
+
+th:last-child {
+    border: 0;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+
+tr:nth-of-type(even) td {
+    background: #283A46;
+}
+
+
+/* #######################ADD____MODAL####################### */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.add_modal {
+    position: absolute;
+    top: 211px;
+    left: 407px;
+    width: 1106px;
+    height: 509px;
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+#head {
+    position: relative;
+    margin-left: 30px;
+    margin-block-start: 37px;
+    font-size: 35px;
+}
+
+.add_modal_header {
+    border-bottom: 1px solid black;
+    position: absolute;
+    top: -16px;
+    width: 100%;
+}
+
+.add_close {
+    position: relative;
+    height: 15px;
+    left: 762px;
+    opacity: 1;
+    padding-left: 55px;
+    color: #aaaaaa
+}
+
+.add_close:hover,
+.add_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add_model_body {
+    position: relative;
+    margin: 109px 30px 99px 30px;
+}
+
+.add_modal_footer {
+    border-top: 1px solid black;
+    position: absolute;
+    top: 415px;
+    width: 100%;
+}
+
+.add_form input {
+    position: relative;
+    height: 45px;
+    width: 248px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    clear: both;
+    color: white;
+    font-size: medium;
+}
+
+.add_form label {
+    position: relative;
+    height: 20px;
+    color: #97A1A9;
+}
+
+#notes {
+    position: relative;
+    height: 170px;
+}
+
+#left {
+    position: relative;
+    width: 435px;
+    height: 270px;
+    right: 575px;
+    float: right;
+    border: none;
+}
+
+#right {
+    position: relative;
+    left: 650px;
+    float: left;
+    border: none;
+}
+
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type=date]::-webkit-datetime-edit-month-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+#add_footer_cancel {
+    position: absolute;
+    top: 36px;
+    width: 60px;
+    left: 86px;
+    background: #2A3E4C;
+    height: 25px;
+    border: none;
+    color: #14AFF1;
+    font-size: 22px;
+}
+
+#add_footer_clear {
+    position: absolute;
+    top: 36px;
+    width: 87px;
+    left: 800px;
+    background: #2A3E4C;
+    height: 34px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-color: #14AFF1;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#add_footer_add {
+    position: absolute;
+    top: 36px;
+    width: 87px;
+    left: 950px;
+    background: #2A3E4C;
+    height: 34px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-color: #14AFF1;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#add_footer_clear:hover,
+#add_footer_add:hover {
+    background-color: #14AFF1;
+}
+
+.asterix {
+    color: red;
+}
+
+
+/* #######################EDIT____MODAL####################### */
+
+.modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.edit_modal {
+    position: absolute;
+    top: 226px;
+    left: 720px;
+    width: 543px;
+    height: 511px;
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.edit_modal_header {
+    border-bottom: 1px solid black;
+    position: absolute;
+    top: 78px;
+    width: 100%;
+}
+
+#edit_invoice {
+    position: absolute;
+    font-size: 27px;
+    left: 30px;
+    top: -71px;
+}
+
+
+/* The Close Button */
+
+.edit_close {
+    position: absolute;
+    left: 463px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.edit_close:hover,
+.edit_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit_modal_body {
+    position: absolute;
+    top: 81px;
+    width: 100%;
+    height: 65%;
+}
+
+#edit_invoice_amt {
+    position: relative;
+    left: 30px;
+    top: 30px;
+    color: #97A1A9;
+}
+
+#edit_invoice_amt_text {
+    position: relative;
+    top: 30px;
+    width: 276px;
+    height: 40px;
+    left: 60px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#edit_notes {
+    position: relative;
+    top: -25px;
+    left: 30px;
+    color: #97A1A9;
+}
+
+#edit_text1 {
+    position: relative;
+    height: 191px;
+    width: 276px;
+    top: 50px;
+    left: 159px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.edit_modal_footer {
+    position: absolute;
+    width: 100%;
+    top: 415px;
+    left: 0px;
+    border-top: 1px solid black;
+}
+
+#edit_footer_cancel {
+    position: absolute;
+    top: 36px;
+    width: 60px;
+    left: 30px;
+    background: #2A3E4C;
+    height: 25px;
+    border: none;
+    color: #14AFF1;
+    font-size: 22px;
+}
+
+#edit_footer_reset {
+    position: relative;
+    top: 36px;
+    width: 68px;
+    left: 350px;
+    background: #2A3E4C;
+    height: 34px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-color: #14AFF1;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#edit_footer_add {
+    position: relative;
+    top: 36px;
+    width: 68px;
+    left: 370px;
+    background: #2A3E4C;
+    height: 34px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-color: #14AFF1;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#edit_footer_reset:hover,
+#edit_footer_add:hover {
+    background-color: #14AFF1;
+}
+
+
+/* #######################DELETE____MODAL####################### */
+
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.delete_modal {
+    position: relative;
+    top: 226px;
+    left: 660px;
+    width: 611px;
+    height: 342px;
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.delete_modal_header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 72px;
+    border-bottom: 1px solid black;
+}
+
+
+/* The Close Button */
+
+#delete_modal_records {
+    position: relative;
+    top: centre;
+    top: -15px;
+    left: 40px;
+    width: 89%;
+    font-size: 33px;
+}
+
+.delete_close {
+    position: relative;
+    left: 261px;
+    top: 5px;
+    font-size: 38px;
+    color: #aaaaaa
+}
+
+.delete_close:hover,
+.delete_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.delete_modal_body {
+    position: absolute;
+    top: 100px;
+    padding: 14px;
+}
+
+.warning {
+    color: #C0C6CA;
+}
+
+#red_warning {
+    color: #FF5E5E;
+}
+
+.delete_modal_footer {
+    position: absolute;
+    width: 100%;
+    top: 280px;
+    border-top: 1px solid black;
+}
+
+#delete_footer_cancel {
+    position: relative;
+    left: 430px;
+    top: 12px;
+    width: 64px;
+    height: 31px;
+    background: #2C404E 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+}
+
+#delete_footer_delete {
+    position: relative;
+    left: 445px;
+    top: 12px;
+    width: 64px;
+    height: 31px;
+    background: #2C404E 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+}
+
+#delete_footer_cancel:hover,
+#delete_footer_delete:hover {
+    background-color: #14AFF1;
+}
+
+#add_text:hover,
+#edit_text:hover,
+#delete_text:hover {
+    color: #FFFFFF;
+}
+
+#add:hover,
+#edit:hover,
+#delete:hover {
+    border-color: #14AFF1;
+}
